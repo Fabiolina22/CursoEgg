@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Multi-file class diagram">
+  <ClassDiagramComponents>
+    <Class name="Persona" package="ENTIDADES" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="numero" type="Dni" visibility="private"/>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="apellido" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Dni" name="numero"/>
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="apellido"/>
+        </Constructor>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="getNumero" returnType="Dni" visibility="public"/>
+        <Method name="setNumero" returnType="void" visibility="public">
+          <Argument type="Dni" name="numero"/>
+        </Method>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="getApellido" returnType="String" visibility="public"/>
+        <Method name="setApellido" returnType="void" visibility="public">
+          <Argument type="String" name="apellido"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Dni" package="ENTIDADES" visibility="public" xPosition="557.0" yPosition="48.0">
+      <Fields>
+        <Field name="numero" type="int" visibility="private"/>
+        <Field name="serie" type="char" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="numero"/>
+          <Argument type="char" name="serie"/>
+        </Constructor>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="getNumero" returnType="int" visibility="public"/>
+        <Method name="setNumero" returnType="void" visibility="public">
+          <Argument type="int" name="numero"/>
+        </Method>
+        <Method name="getSerie" returnType="char" visibility="public"/>
+        <Method name="setSerie" returnType="void" visibility="public">
+          <Argument type="char" name="serie"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation source="ENTIDADES.Persona" target="ENTIDADES.Dni" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="creacion" source="ENTIDADES.Persona" target="ENTIDADES.Dni" type="Composition" sourceCardinality="0..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
