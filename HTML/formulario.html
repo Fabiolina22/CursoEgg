@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Registrar un usuario</h1>
+    <form action="" method="post">
+        <div>
+            <label for="usuario">Nombre de usuario</label><br>
+            <input type="text" placeholder="Usuario " id="usuario" required>
+        </div>
+        <div>
+            <label for="contraseña">Contraseña del usuario</label><br>
+            <input type="password" minlength="4" name="contraseña" id="contraseña" placeholder="Contraseña" required>
+        </div>
+        <div>
+            <label for="edad">Edad del usuario</label><br>
+            <input type="number" maxlength="2" name="edad" id="edad" placeholder="Indique su edad" required>
+        </div>
+        <div>
+            <label for="fecha de nacimiento">Fecha de nacimiento del usuario</label><br>
+            <input type="date" name="fecha de ingreso" id="fecha ingreso" placeholder="Fecha de ingreso" required>
+        </div>
+
+        <div>
+            <label for="Sexo del usuario">Sexo del usuario</label><br>
+            <input type="radio" id="Mujer" name="genero" value="1"> 
+            <label for="Mujer">Mujer</label><br>
+            <input type="radio" id="Hombre" name="genero" value="2">
+            <label for="Hombre">Hombre</label><br>
+            <input type="radio" id="pnd" name="genero" value="3"> 
+            <label for="pnd">Prefiero no decir</label><br>
+        </div>
+        <div>
+            <label for="pais">Pais de nacimiento del usuario</label><br>
+            <select name="pais" id="pais" aria-placeholder="Elija un pais">
+                <option value="argentina">Argentina</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Ecuador">Ecuador</option>
+                <option value="Peru">Perú</option>
+            </select>
+            
+        </div>
+    </form>
+
+</body>
+
+</html>
